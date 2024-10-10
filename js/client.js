@@ -7,7 +7,8 @@ import { userStrings } from './../lang/en/en.js';
 
 class PatientManager {
   constructor() {
-    this.apiUrl = "http://localhost:8008";  
+    //this.apiUrl = "http://localhost:8008";  
+    this.apiUrl = "http://192.34.62.102:8008";
     this.initEventListeners();  
   }
 
