@@ -9,7 +9,7 @@ class PatientManager {
   constructor() {
     //this.apiUrl = "http://localhost:8008";  
     //this.apiUrl = "http://192.34.62.102:8008";
-    this.apiUrl = "https://ranpark.xyz/";
+    this.apiUrl = "https://ranpark.xyz";
     this.initEventListeners();  
   }
 
