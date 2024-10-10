@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Manager</title>
+    <script type="module" src="./js/client.js" defer></script>
+</head>
+<body>
+    <h1>Patient Manager</h1>
+
+    <!-- Button to insert predefined patient data -->
+    <button id="insert-button">Insert Predefined Patients</button>
+
+    <!-- SQL Query Form -->
+    <h3>Submit SQL Query</h3>
+    <textarea id="sql-query" rows="4" cols="50" placeholder="Type SQL query here (only SELECT and INSERT)"></textarea>
+    <br />
+    <button id="send-query-button">Submit SQL Query</button>
+
+    <!-- Response Display Section -->
+    <h3>Server Response</h3>
+    <pre id="response"></pre>
+</body>
+</html>
