@@ -8,7 +8,8 @@ import { userStrings } from './../lang/en/en.js';
 class PatientManager {
   constructor() {
     //this.apiUrl = "http://localhost:8008";  
-    this.apiUrl = "http://192.34.62.102:8008";
+    //this.apiUrl = "http://192.34.62.102:8008";
+    this.apiUrl = "https://ranpark.xyz/";
     this.initEventListeners();  
   }
 
@@ -50,7 +51,6 @@ class PatientManager {
     } catch (error) {
       // Handle errors by displaying the error message from strings
       document.getElementById('response').innerText = userStrings.messages.errorOccurred;
-      console.error("Error inserting predefined patients:", error);
     }
   }
 
@@ -85,7 +85,6 @@ class PatientManager {
     } catch (error) {
       // Handle errors by displaying the error message from strings
       document.getElementById('response').innerText = userStrings.messages.errorOccurred;
-      console.error("Error submitting SQL query:", error);
     }
   }
 }
