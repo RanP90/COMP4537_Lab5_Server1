@@ -74,11 +74,19 @@ class PatientManager {
         body: JSON.stringify({ query })
       });
 
+      /*
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-
+      */
+     
       const result = await response.json();
+
+      if (!response.ok) {
+        // Handle the custom error message from the server response
+        document.getElementById('response').innerText = result.error || "An error occurred while executing the query.";
+        return;
+      }
 
       // Display the server response
       document.getElementById('response').innerText = JSON.stringify(result, null, 2);
